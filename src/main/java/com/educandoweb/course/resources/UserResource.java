@@ -55,7 +55,7 @@ public class UserResource {
 		return ResponseEntity.noContent().build();
 	}
 	
-	
+	//Atualiza dados do usuáro
 	@PutMapping(value = "/{id}")
 	public ResponseEntity<User> update(@PathVariable Long id, @RequestBody User obj){
 		obj = service.update(id, obj);
